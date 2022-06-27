@@ -1,0 +1,26 @@
+<div class="bank-details-container">
+  <h2>Cash Withdraw Account</h2>
+  <div class="row">
+    <div class="col-4">
+      <div class="card-body-balance p-20">
+        <h2>Type of Account</h2>
+        <span>Savings Account</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <div class="card-body-balance p-20">
+        <h2>Withdraw Amount</h2>
+        <span><input
+          class="form-control"
+          id="description"
+          required
+          [(ngModel)]="account.wamount"
+          name="description"
+        /></span>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 10px"><button (click)="withdraw()" class="btn btn-primary">Submit</button></div>
+</div>
