@@ -28,4 +28,9 @@ export class AuthService {
       password
     }, httpOptions);
   }
+
+  getIsAuthorized(): any {
+    return localStorage.getItem('auth-token');
+  }
+
 }

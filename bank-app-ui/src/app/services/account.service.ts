@@ -12,7 +12,7 @@ export class AccountService {
   constructor(private http: HttpClient, private envService: EnvService) { }
 
   getAccountBalance(): Observable<Account[]> {
-    return this.http.get<Account[]>(`${this.envService.baseURL}/api/tutorials`);
+    return this.http.get<Account[]>(`${this.envService.baseURL}/api/bankDetails`);
   }
 
   deposit(data: any): Observable<any> {
