@@ -23,7 +23,7 @@ export class WithdrawComponent implements OnInit {
   withdraw() {
     const data = {
       accountType: 'Savings',
-      description: this.account.wamount
+      amount: this.account.wamount
     };
 
     this.accountService.withdraw(data)
