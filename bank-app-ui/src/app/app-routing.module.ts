@@ -5,14 +5,15 @@ import { RegisterComponent } from './core/register/register.component';
 import { BankHomeComponent } from './components/bank-home/bank-home.component';
 import { WithdrawComponent } from './components/withdraw/withdraw.component';
 import { DepositComponent } from './components/deposit/deposit.component';
+import { AuthGuard } from './core/guards/auth/auth.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'bankDetails', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: 'signin', pathMatch: 'full' },
+  { path: 'signin', component: LoginComponent },
   { path: 'deposit', component: DepositComponent },
   { path: 'withdraw', component: WithdrawComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'bankDetails', component: BankHomeComponent },
+  { path: 'bankDetails', component: BankHomeComponent , canActivate: [AuthGuard], },
 ];
 
 @NgModule({
