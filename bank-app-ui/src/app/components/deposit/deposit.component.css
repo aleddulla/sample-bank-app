@@ -1,0 +1,33 @@
+.bank-details-container {
+  margin-top: 10px;
+}
+
+.card-body-balance {
+  border: 0px solid rgba(0, 0, 0, .125);
+  background: #fff;
+  border-color: #dee2e6 #dee2e6 #dee2e6;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  padding: .9rem;
+  padding-left: 0;
+}
+
+.card-body {
+  border: 0px solid rgba(0, 0, 0, .125);
+  background: #fff;
+  border-color: #dee2e6 #dee2e6 #dee2e6;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  padding: .6rem;
+  padding-left: 0;
+}
+
+button {
+  padding: 0 13px !important;
+  border: none;
+}
+
+button:focus, button:active, button:focus:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
