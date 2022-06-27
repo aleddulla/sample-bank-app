@@ -8,12 +8,12 @@ import { DepositComponent } from './components/deposit/deposit.component';
 import { AuthGuard } from './core/guards/auth/auth.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'signin', pathMatch: 'full' },
-  { path: 'signin', component: LoginComponent },
-  { path: 'deposit', component: DepositComponent },
-  { path: 'withdraw', component: WithdrawComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'bankDetails', component: BankHomeComponent , canActivate: [AuthGuard], },
+  { path: '', redirectTo: 'signin', pathMatch: 'full', canActivate: [AuthGuard] },
+  { path: 'signin', component: LoginComponent , canActivate: [AuthGuard] },
+  { path: 'deposit', component: DepositComponent, canActivate: [AuthGuard] },
+  { path: 'withdraw', component: WithdrawComponent, canActivate: [AuthGuard] },
+  { path: 'register', component: RegisterComponent, canActivate: [AuthGuard] },
+  { path: 'bankDetails', component: BankHomeComponent , canActivate: [AuthGuard], }
 ];
 
 @NgModule({
