@@ -6,7 +6,8 @@ Steps to setup Angular bank-app-ui
 
 Steps to setup Backend Spring boot
 1. create database testdb
-2. INSERT INTO roles(name) VALUES('ROLE_USER');
+2. use testdb
+3. INSERT INTO roles(name) VALUES('ROLE_USER');
 
 Run Spring boot Application
 mvn spring-boot:run
