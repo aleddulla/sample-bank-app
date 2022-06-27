@@ -10,6 +10,7 @@ import javax.validation.Valid;
 import com.sample.spring.datajpa.models.ERole;
 import com.sample.spring.datajpa.models.Role;
 import com.sample.spring.datajpa.models.User;
+import com.sample.spring.datajpa.payload.request.LoginRequest;
 import com.sample.spring.datajpa.payload.request.SignupRequest;
 import com.sample.spring.datajpa.payload.response.JwtResponse;
 import com.sample.spring.datajpa.payload.response.MessageResponse;
@@ -29,7 +30,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bezkoder.springjwt.payload.request.LoginRequest;
 import com.sample.spring.datajpa.repository.RoleRepository;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
