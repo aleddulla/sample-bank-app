@@ -12,21 +12,35 @@
   margin: 5px;
 }
 
-.bank-details-container>.left {
-  background-color: #D30058;
-}
-
-.bank-details-container>.center {
-  background-color: #36ABE1;
-}
-
-.bank-details-container>.right {
-  background-color: #23B776;
-}
-
-@media(min-width:576px) {
+@media (min-width:1025px){
   .card-container {
-    flex-flow: row wrap;
+    margin-top: 20px;
+  }
+}
+
+@media(min-width:960px) {
+  .card-container {
+    width: 33%;
+    margin-top: 20px;
+  }
+
+  .card-row {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:480px){
+  .card-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .card-row {
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
   }
 }
 

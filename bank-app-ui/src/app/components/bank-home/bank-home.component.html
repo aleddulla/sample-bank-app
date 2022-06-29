@@ -1,13 +1,13 @@
 <div class="bank-details-container">
   <h2>Welcome !</h2>
-  <div class="row">
+  <div class="row card-row">
     <div class="col-4 card-container">
       <div class="card-body-balance p-20">
         <h2>Savings Balance</h2>
         <span><strong>$ {{totalAmount || 0}}</strong></span>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-4 card-container">
       <div class="card-body p-20">
         <h2>Deposit Amount</h2>
         <span><button type="submit" class="btn btn-light-blue ml-2"  (click)="deposit()">
@@ -15,7 +15,7 @@
         </button></span>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-4 card-container">
       <div class="card-body p-20">
         <h2>Withdraw Amount</h2>
         <span><button type="submit" class="btn btn-light-blue ml-2" (click)="withdraw()">
